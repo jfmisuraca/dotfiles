@@ -42,14 +42,14 @@ set nocompatible
 
 " Install vim-plug if not found - borrar si tarda mucho en iniciar
 if empty(glob('~/.vim/autoload/plug.vim'))
-	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-				\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+                \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 endif
 
 " Run PlugInstall if there are missing plugins
 autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-			\| PlugInstall --sync | source $MYVIMRC
-			\| endif
+            \| PlugInstall --sync | source $MYVIMRC
+            \| endif
 
 
 " configuracion de directorio de swap files
@@ -59,7 +59,6 @@ set directory=$HOME/.vim/swp//
 call plug#begin()
 "" Goyo
 Plug 'junegunn/goyo.vim'
-" Limelight
 Plug 'junegunn/limelight.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'farmergreg/vim-lastplace'
@@ -71,8 +70,6 @@ Plug 'dylanaraps/wal.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'rose-pine/vim'
 Plug 'sainnhe/gruvbox-material'
-"Plug 'Calder-Ty/todotext.vim'
-"Plug 'jakethekoenig/VimOutline'
 call plug#end()
 
 set encoding=UTF-8
@@ -102,9 +99,6 @@ autocmd FileType vimwiki set ft=markdown
 
 " activar script de tildes
 so /home/francisco/Dropbox/Aplicaciones/scripts/tildes.vim
-"so $scripts/tildes.vim
-nm <leader>t :call ToggleTILDES()<CR>
-imap ,t <esc>:call ToggleTILDES()<CR>a
 
 " indentar todo el documento y volver el cursor a la posición anterior
 nnoremap <leader>= gg=G``
@@ -170,22 +164,21 @@ set backspace   =indent,eol,start  " Make backspace work as you would expect.
 set ttyfast                " Faster redrawing.
 set lazyredraw             " Only redraw when necessary.
 set laststatus  =2         " Always show statusline.
-"set list                   " Show non-printable characters.
 if has('multi_byte') && &encoding ==# 'utf-8'
-  let &listchars = 'tab:▸ ,extends:❯,precedes:❮,nbsp:±'
+    let &listchars = 'tab:▸ ,extends:❯,precedes:❮,nbsp:±'
 else
-  let &listchars = 'tab:> ,extends:>,precedes:<,nbsp:.'
+    let &listchars = 'tab:> ,extends:>,precedes:<,nbsp:.'
 endif
 
 if &shell =~# 'fish$'
-  set shell=/bin/bash
+    set shell=/bin/bash
 endif
 
 set backup
 set backupdir   =$HOME/.vim/files/backup//
 set backupext   =-vimbackup
 set backupskip  =
-set directory   =$HOME/.vim/files/swap//
+    set directory   =$HOME/.vim/files/swap//
 set updatecount =100
 set undofile
 set undodir     =$HOME/.vim/files/undo//
