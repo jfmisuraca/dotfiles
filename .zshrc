@@ -41,23 +41,19 @@ alias off="sudo shutdown now"
 alias susp='lock && systemctl suspend'
 alias scr='cd ~/Software/scripts/'
 alias conf='cd ~/.config'
-#alias csed='cd ~/Dropbox/Documentos/UNR/Ciencias\ de\ la\ educación'
 alias mount="sudo mount"
 alias umount="sudo umount"
 alias cp="cp -ivr"
 alias mkdir='mkdir -p'
-alias alacritty="alacritty -o font.size=8"
 alias b="busqueda"
 alias p='pter $TODO_FILE'
-alias dev="cd ~/Software/dev"
 
 # versiones de nvim
-alias nvn="NVIM_APPNAME=nvim_next nvim"
-alias v="NVIM_APPNAME=nvim_vimscript nvim"
-alias nvk="NVIM_APPNAME=nvim_kickstart nvim"
+alias nvn="NVIM_APPNAME=nvim_next nvim" #para nextjs
+alias v="NVIM_APPNAME=nvim_vimscript nvim" #neovim con misma config que vim
+alias nvk="NVIM_APPNAME=nvim_kickstart nvim" #neovim kickstart de tjdevries
 alias nv="nvim"
 
-# Luke Smith
 alias ls="ls -hNX --color=auto --group-directories-first"
 alias grep="grep --color=auto"
 
@@ -91,7 +87,6 @@ export PATH="$HOME/.local/bin:$PATH"
 #vim encryption
 GPG_TTY=`tty`
 export GPG_TTY
-
 
 unset MANPATH
 
