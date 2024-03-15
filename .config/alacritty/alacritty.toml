@@ -1,0 +1,21 @@
+[colors.primary]
+foreground = "0xFFFCF0"
+dim_foreground = "0xFFFCF0"
+bright_foreground = "0xFFFCF0"
+#dim_background = "0x1C1B1A"
+#bright_background = "0x1C1B1A"
+
+[colors.cursor]
+text = "0xFFFCF0"
+cursor = "0xFFFCF0"
+
+[colors.bright]
+black = "0x100F0F"
+red = "0xD14D41"
+green = "0x879A39"
+yellow = "0xD0A215"
+blue = "0x4385BE"
+magenta = "0xCE5D97"
+cyan = "0x3AA99F"
+white = "0xFFFCF0"
+
