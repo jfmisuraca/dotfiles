@@ -14,7 +14,8 @@ MAILSYNC_MUTE=1
 PASSWORD_STORE_CLIP_TIME=10
 PASSWORD_STORE_GENERATED_LENGTH=25
 . "$HOME/.cargo/env"
-GOPATH=$HOME/.go
+#GOPATH="$HOME/.go"
+#GOBIN="$HOME/.go/bin"
 
 # todo.txt
 TODO_DIR="$HOME/Dropbox/Aplicaciones/todo"

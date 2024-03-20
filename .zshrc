@@ -83,6 +83,8 @@ export PATH="$HOME/.local/bin:$PATH"
 [[ -d /home/francisco/Software/scripts ]] && export PATH="/home/francisco/Software/scripts:$PATH"
 [[ -d /home/francisco/.cargo/bin ]] && export PATH="/home/francisco/.cargo/bin:$PATH"
 [[ -d /home/francisco/.config/emacs/bin ]] && export PATH="/home/francisco/.config/emacs/bin:$PATH"
+export GOPATH=$HOME/.go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 #vim encryption
 GPG_TTY=`tty`
