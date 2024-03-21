@@ -163,7 +163,7 @@ set shiftround             " >> indents to next multiple of 'shiftwidth'.
 set backspace   =indent,eol,start  " Make backspace work as you would expect.
 set ttyfast                " Faster redrawing.
 set lazyredraw             " Only redraw when necessary.
-set laststatus  =2         " Always show statusline.
+"set laststatus  =2         " Always show statusline.
 if has('multi_byte') && &encoding ==# 'utf-8'
     let &listchars = 'tab:▸ ,extends:❯,precedes:❮,nbsp:±'
 else
