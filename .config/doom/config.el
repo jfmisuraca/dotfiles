@@ -43,6 +43,13 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/Dropbox/Documentos/Obsidian/Orgs/")
 
+(after! doom-themes
+  (load-theme 'doom-nano-dark t))
+
+(use-package! doom-nano-modeline
+  :config
+  (doom-nano-modeline-mode 1)
+  (global-hide-mode-line-mode 1))
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
