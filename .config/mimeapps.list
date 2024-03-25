@@ -39,6 +39,7 @@ x-scheme-handler/xmpp=telegramdesktop.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=abiword.desktop
 image/webp=userapp-nsxiv-CPHW71.desktop
 x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/figma=figma-linux.desktop
 
 [Added Associations]
 text/plain=text.desktop;
