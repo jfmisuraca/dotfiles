@@ -49,6 +49,6 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;; (unpin! t)
 
-(package! doom-nano-modeline
-  :recipe (:host github
-           :repo "ronisbr/doom-nano-modeline"))
+;; (package! doom-nano-modeline
+;;   :recipe (:host github
+;;            :repo "ronisbr/doom-nano-modeline"))

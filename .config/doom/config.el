@@ -43,13 +43,13 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/Dropbox/Documentos/Obsidian/Orgs/")
 
-(after! doom-themes
-  (load-theme 'doom-nano-dark t))
-
-(use-package! doom-nano-modeline
-  :config
-  (doom-nano-modeline-mode 1)
-  (global-hide-mode-line-mode 1))
+;; (after! doom-themes
+;; (load-theme 'doom-nano-dark t))
+;; 
+;; (use-package! doom-nano-modeline
+;; :config
+;; (doom-nano-modeline-mode 1)
+;; (global-hide-mode-line-mode 1))
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
@@ -82,3 +82,69 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+(require 'mu4e)
+
+;; list of your email adresses:
+(setq mu4e-personal-addresses '("jfmisuraca@hotmail.com"
+                                "juannf14@gmail.com"
+                                "jfmisuraca@gmail.com"))
+
+;; (setq mu4e-contexts
+;;       `(,(make-mu4e-context
+;;           :name "Hotmail" ;; Give it a unique name. I recommend they start with a different letter than the second one.
+;;           :enter-func (lambda () (mu4e-message "Entrando a Hotmail"))
+;;           :leave-func (lambda () (mu4e-message "Saliendo de Hotmail"))
+;;           :match-func (lambda (msg)
+;;                         (when msg
+;;                           (string= (mu4e-message-field msg :maildir) "/jfmisuraca@hotmail")))
+;;           :vars '((user-mail-address . "jfmisuraca@hotmail.com")
+;;                   (user-full-name . "Juan Francisco")
+;;                   (mu4e-drafts-folder . "/address1@gmail/[Gmail].Drafts")
+;;                   (mu4e-refile-folder . "/address1@gmail/[Gmail].All Mail")
+;;                   (mu4e-sent-folder . "/address1@gmail/[Gmail].Sent Mail")
+;;                   (mu4e-trash-folder . "/address1@gmail/[Gmail].Trash")
+;;                   ;; SMTP configuration
+;;                   (starttls-use-gnutls . t)
+;;                   (smtpmail-starttls-credentials . '(("smtp.gmail.com" 587 nil nil)))
+;;                   (smtpmail-smtp-user . "address1@gmail.com")
+;;                   (smtpmail-auth-credentials .
+;;                                              '(("smtp.gmail.com" 587 "address1@gmail.com" nil)))
+;;                   (smtpmail-default-smtp-server . "smtp.gmail.com")
+;;                   (smtpmail-smtp-server . "smtp.gmail.com")
+;;                   (smtpmail-smtp-service . 587)))
+;;         ,(make-mu4e-context
+;;           :name "Business Address" ;; Or any other name you like.
+;;           :enter-func (lambda () (mu4e-message "Entering cablecar context"))
+;;           :leave-func (lambda () (mu4e-message "Leaving cablecar context"))
+
+;;           :match-func (lambda (msg)
+;;                         (when msg
+;;                           (string= (mu4e-message-field msg :maildir) "/address2@gmail")))
+;;           :vars '((user-mail-address . "address2@gmail.com")
+;;                   (user-full-name . "Your Name Here")
+;;                   (mu4e-drafts-folder . "/address2@gmail/[Gmail].Drafts")
+;;                   (mu4e-refile-folder . "/address2@gmail/[Gmail].All Mail")
+;;                   (mu4e-sent-folder . "/address2@gmail/[Gmail].Sent Mail")
+;;                   (mu4e-trash-folder . "/address2@gmail/[Gmail].Trash")
+;;                   ;; SMTP configuration
+;;                   (starttls-use-gnutls . t)
+;;                   (smtpmail-startt
+;;                   (smtpmail-smtp-user . "address2@gmail.com")
+;;                   (smtpmail-auth-credentials .
+;;                                              '(("smtp.gmail.com" 587 "address2@gmail.com" nil)))
+;;                   (smtpmail-default-smtp-server . "smtp.gmail.com")
+;;                   (smtpmail-smtp-server . "smtp.gmail.com")
+;;                   (smtpmail-smtp-service . 587)))
+;;         ))
+
+;; (setq mu4e-maildir-shortcuts  '((:maildir "/address2@gmail/INBOX"               :key ?i)
+;;                                 (:maildir "/address2@gmail/[Gmail].Sent Mail"   :key ?s)
+;;                                 (:maildir "/address2@gmail/[Gmail].Drafts"      :key ?d)
+;;                                 (:maildir "/address2@gmail/[Gmail].Trash"       :key ?t)
+;;                                 (:maildir "/address2@gmail/[Gmail].All Mail"    :key ?a)
+;;                                 (:maildir "/address1@gmail/INBOX"               :key ?I)
+;;                                 (:maildir "/address1@gmail/[Gmail].Sent Mail"   :key ?S)
+;;                                 (:maildir "/address1@gmail/[Gmail].Drafts"      :key ?D)
+;;                                 (:maildir "/address1@gmail/[Gmail].Trash"       :key ?T)
+;;                                 (:maildir "/address1@gmail/[Gmail].All Mail"    :key ?A)))
