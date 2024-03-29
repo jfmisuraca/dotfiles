@@ -70,6 +70,7 @@ Plug 'dylanaraps/wal.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'rose-pine/vim'
 Plug 'sainnhe/gruvbox-material'
+""Plug 'freitass/todo.txt-vim'
 call plug#end()
 
 set encoding=UTF-8
