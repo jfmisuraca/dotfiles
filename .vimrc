@@ -23,9 +23,9 @@ autocmd FileType html inoremap <leader>b <b></b><Space><++><Esc>FbT>i
 autocmd FileType html inoremap <leader>p <p></p><Space><++><Esc>FpT>i
 
 " navegación con guías
-inoremap <leader><leader> <Esc>/<++><Enter>"_c4l
-vnoremap <leader><leader> <Esc>/<++><Enter>"_c4l
-map <leader><leader> <Esc>/<++><Enter>"_c4l
+" inoremap <leader><leader> <Esc>/<++><Enter>"_c4l
+" vnoremap <leader><leader> <Esc>/<++><Enter>"_c4l
+" map <leader><leader> <Esc>/<++><Enter>"_c4l
 
 " Goyo para redactar mails en neomutt
 autocmd BufRead,BufNewFile /tmp/neomutt* Goyo
@@ -70,6 +70,7 @@ Plug 'dylanaraps/wal.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'rose-pine/vim'
 Plug 'sainnhe/gruvbox-material'
+Plug 'ledger/vim-ledger'
 ""Plug 'freitass/todo.txt-vim'
 call plug#end()
 
@@ -84,6 +85,10 @@ set background=dark
 let g:gruvbox_material_background = 'medium'
 let g:gruvbox_material_better_performance = 1
 colorscheme gruvbox-material
+
+" configuracion para ledger
+let g:ledger_maxwidth = 80
+let g:ledger_fillstring = '    -'
 
 " colorscheme wal
 
