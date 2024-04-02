@@ -42,6 +42,3 @@ clipboard_threshold: 70
 # For a list of all the available options, visit the official docs at: https://espanso.org/docs/
 #extra_includes
 x11_use_xclip_backend: true
-
-# Arrancar apagado
-enable: false
