@@ -23,9 +23,9 @@ autocmd FileType html inoremap <leader>b <b></b><Space><++><Esc>FbT>i
 autocmd FileType html inoremap <leader>p <p></p><Space><++><Esc>FpT>i
 
 " navegación con guías
-" inoremap <leader><leader> <Esc>/<++><Enter>"_c4l
-" vnoremap <leader><leader> <Esc>/<++><Enter>"_c4l
-" map <leader><leader> <Esc>/<++><Enter>"_c4l
+inoremap <leader><leader> <Esc>/<++><Enter>"_c4l
+vnoremap <leader><leader> <Esc>/<++><Enter>"_c4l
+map <leader><leader> <Esc>/<++><Enter>"_c4l
 
 " Goyo para redactar mails en neomutt
 autocmd BufRead,BufNewFile /tmp/neomutt* Goyo
