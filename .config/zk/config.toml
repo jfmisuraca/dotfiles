@@ -194,7 +194,7 @@ random = "zk list -x Inbox --quiet --format full --sort random --limit 1"
 
 edit = 'zk edit -x Inbox --interactive "$@"'
 
-#new = 'zk new --title="$(date)"'
+new = 'zk new Inbox'
 
 # Returns the Git history for the notes found with the given arguments.
 # Note the use of a pipe and the location of $@.
