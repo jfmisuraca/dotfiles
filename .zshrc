@@ -47,6 +47,7 @@ alias cp="cp -ivr"
 alias mkdir='mkdir -p'
 alias b="busqueda"
 alias p='pter $TODO_FILE'
+alias ledger='ledger -f $LEDGER_FILE'
 
 # versiones de nvim
 alias nvn="NVIM_APPNAME=nvim_next nvim" #para nextjs
