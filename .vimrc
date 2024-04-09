@@ -27,6 +27,9 @@ inoremap <leader><leader> <Esc>/<++><Enter>"_c4l
 vnoremap <leader><leader> <Esc>/<++><Enter>"_c4l
 map <leader><leader> <Esc>/<++><Enter>"_c4l
 
+" forzar guardado con permisos root
+cmap w!! w !sudo dd of=%<Enter>
+
 " Goyo para redactar mails en neomutt
 autocmd BufRead,BufNewFile /tmp/neomutt* Goyo
 "autocmd BufRead,BufNewFile /tmp/neomutt* let g:goyo_width=110
