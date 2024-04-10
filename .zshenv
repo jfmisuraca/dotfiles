@@ -16,7 +16,7 @@ PASSWORD_STORE_GENERATED_LENGTH=25
 . "$HOME/.cargo/env"
 #GOPATH="$HOME/.go"
 #GOBIN="$HOME/.go/bin"
-LEDGER_FILE="$HOME/Dropbox/Aplicaciones/Ledger/main.txt"
+LEDGER_FILE="$HOME/Dropbox/Documentos/Finanzas/hledger/2024.journal"
 
 # todo.txt
 TODO_DIR="$HOME/Dropbox/Aplicaciones/todo"
