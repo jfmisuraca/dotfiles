@@ -48,9 +48,9 @@ alias mkdir='mkdir -p'
 alias b="busqueda"
 alias p='pter $TODO_FILE'
 alias ledger='ledger -f $LEDGER_FILE'
+alias hledger='hledger -f $LEDGER_FILE'
 
 # versiones de nvim
-alias nvn="NVIM_APPNAME=nvim_next nvim" #para nextjs
 alias v="NVIM_APPNAME=nvim_vimscript nvim" #neovim con misma config que vim
 alias nvk="NVIM_APPNAME=nvim_kickstart nvim" #neovim kickstart de tjdevries
 alias nv="nvim"
