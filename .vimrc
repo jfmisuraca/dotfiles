@@ -16,8 +16,8 @@ nnoremap <leader>i :e $zettelkasten/Indice\ glosario\ cheatsheet.md<CR>:cd $zett
 nnoremap n nzz
 nnoremap N Nzz
 "html luke
-autocmd FileType html inoremap <Space><Space> <Esc>/<++><Enter>"_c4l
-autocmd FileType html nnoremap <Space><Space> <Esc>/<++><Enter>"_c4l
+autocmd FileType html inoremap <c-Space> <Esc>/<++><Enter>"_c4l
+autocmd FileType html nnoremap <c-Space> <Esc>/<++><Enter>"_c4l
 autocmd FileType html inoremap <leader>i <em></em><Space><++><Esc>FeT>i
 autocmd FileType html inoremap <leader>b <b></b><Space><++><Esc>FbT>i
 autocmd FileType html inoremap <leader>p <p></p><Space><++><Esc>FpT>i
