@@ -23,9 +23,8 @@ autocmd FileType html inoremap <leader>b <b></b><Space><++><Esc>FbT>i
 autocmd FileType html inoremap <leader>p <p></p><Space><++><Esc>FpT>i
 
 " navegación con guías
-inoremap <leader><leader> <Esc>/<++><Enter>"_c4l
-vnoremap <leader><leader> <Esc>/<++><Enter>"_c4l
-map <leader><leader> <Esc>/<++><Enter>"_c4l
+inoremap <c-Space> <Esc>/<++><Enter>"_c4l
+nnoremap <c-Space> <Esc>/<++><Enter>"_c4l
 
 " forzar guardado con permisos root
 cmap w!! w !sudo dd of=%<Enter>
