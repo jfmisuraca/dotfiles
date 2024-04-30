@@ -1,9 +1,7 @@
 " Leader remap
 let mapleader = " "
-nnoremap ,m ZZ
 " desactivar el resaltado de resultado de búsqueda hasta que vuelva a usarse
 nnoremap <Leader>h :nohlsearch<CR>
-nnoremap ,n ZQ<CR>
 noremap <leader>g :Goyo<CR>
 nnoremap <silent> <Leader>f :NV<CR>
 nmap <C-h> <C-w>h
@@ -73,11 +71,9 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'rose-pine/vim'
 Plug 'sainnhe/gruvbox-material'
 Plug 'ledger/vim-ledger'
-""Plug 'freitass/todo.txt-vim'
 call plug#end()
 
 set encoding=UTF-8
-"set termguicolors
 
 if has('termguicolors')
     set termguicolors
@@ -101,7 +97,7 @@ let g:goyo_width = 110
 let g:limelight_default_coefficient = 0.7
 let g:limelight_conceal_ctermfg = 'Gray'
 
-let g:vimwiki_list = [{'syntax':'markdown','ext': '.md' }]
+let g:vimwiki_list = [{'path': '~/Dropbox/Documentos/Obsidian/Zettelkasten/', 'syntax':'markdown', 'ext': '.md' }]
 autocmd FileType vimwiki set ft=markdown
 
 
@@ -138,7 +134,7 @@ set showmatch
 set hlsearch
 
 " sintaxis de bloques de código en archivos markdown
-let g:markdown_fenced_languages = ['html', 'js=javascript', 'css']
+let g:markdown_fenced_languages = ['html', 'js=javascript', 'css', 'bash']
 
 " limitar la paleta a 16 colores para que la busque en .Xresources
 "set t_Co=16
@@ -172,6 +168,7 @@ set backspace   =indent,eol,start  " Make backspace work as you would expect.
 set ttyfast                " Faster redrawing.
 set lazyredraw             " Only redraw when necessary.
 "set laststatus  =2         " Always show statusline.
+"set list                   " Show non-printable characters.
 if has('multi_byte') && &encoding ==# 'utf-8'
     let &listchars = 'tab:▸ ,extends:❯,precedes:❮,nbsp:±'
 else
@@ -190,3 +187,4 @@ set backupskip  =
 set updatecount =100
 set undofile
 set undodir     =$HOME/.vim/files/undo//
+set clipboard=unnamed,unnamedplus
