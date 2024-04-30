@@ -29,7 +29,6 @@ image/bmp=nsxiv.desktop
 image/gif=nsxiv.desktop
 image/jpeg=nsxiv.desktop
 image/tiff=nsxiv.desktop
-x-scheme-handler/tg=userapp-Telegram Desktop-86KHP1.desktop
 x-scheme-handler/mailto=mail.desktop;
 x-scheme-handler/icq=telegramdesktop.desktop
 x-scheme-handler/irc=telegramdesktop.desktop
@@ -43,7 +42,6 @@ x-scheme-handler/figma=figma-linux.desktop
 
 [Added Associations]
 text/plain=text.desktop;
-x-scheme-handler/tg=userapp-Telegram Desktop-86KHP1.desktop;
 application/epub+zip=org.pwmt.zathura-pdf-mupdf.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=abiword.desktop;
 image/webp=userapp-nsxiv-CPHW71.desktop;

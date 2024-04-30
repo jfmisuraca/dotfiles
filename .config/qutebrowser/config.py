@@ -357,7 +357,7 @@ config.bind(
 )
 config.bind(
     "Z",
-    'hint links spawn st -n yt-dlp -e yt-dlp -P "~/Videos/youtube" -N 2 -c -f "best[height<=1080]" --sub-langs "en-orig,-live_chat" --embed-subs --write-auto-subs {hint-url}',
+    'hint links spawn st -n yt-dlp -e yt-dlp -P "~/Videos/youtube" -N 2 -c -f "best[height<=1080]" --sub-langs "en-orig,-live_chat" --embed-subs --write-auto-subs --no-playlist {hint-url}',
 )
 
 # fuentes fonts
