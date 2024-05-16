@@ -57,6 +57,7 @@ alias nv="nvim"
 
 alias ls="ls -hNX --color=auto --group-directories-first"
 alias grep="grep --color=auto"
+source ~/.alias_privados
 
 ## Custom suffix aliases
 alias -s md=vim

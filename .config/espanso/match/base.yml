@@ -25,6 +25,16 @@ matches:
         params:
           format: "%Y%m%d%H%M"
 
+
+  - trigger: ":id"
+    replace: "{{idhhmmss}}"
+    vars:
+      - name: idhhmmss
+        type: date
+        params:
+          format: "%Y%m%d%H%M%S"
+
+
   - trigger: ":fecha"
     replace: "{{mifecha}}"
     vars:
