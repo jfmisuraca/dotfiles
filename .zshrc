@@ -83,6 +83,8 @@ export PATH="$HOME/.local/bin:$PATH"
 #    export PATH="/home/francisco/fzf/bin/fzf:$PATH"
 #fi
 [[ -d /home/francisco/Software/scripts ]] && export PATH="/home/francisco/Software/scripts:$PATH"
+[[ -d /home/francisco/Software/scripts/dmenu ]] && export PATH="/home/francisco/Software/scripts/dmenu:$PATH"
+#[[ -d /home/francisco/software/scripts ]] && export PATH="/home/francisco/software/scripts:$PATH"
 [[ -d /home/francisco/.cargo/bin ]] && export PATH="/home/francisco/.cargo/bin:$PATH"
 [[ -d /home/francisco/.config/emacs/bin ]] && export PATH="/home/francisco/.config/emacs/bin:$PATH"
 export GOPATH=$HOME/.go
