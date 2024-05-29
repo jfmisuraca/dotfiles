@@ -73,7 +73,7 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'ledger/vim-ledger'
 call plug#end()
 
-set encoding=UTF-8
+set encoding=utf-8
 
 if has('termguicolors')
     set termguicolors
@@ -87,6 +87,20 @@ colorscheme gruvbox-material
 " configuracion para ledger
 let g:ledger_maxwidth = 80
 let g:ledger_fillstring = '    -'
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+
+" moverse entre historial de buffers
+noremap <Left> :silent bp<CR>
+noremap <Right> :silent bn<CR>
+
+" mover lineas con ctrl + j/k
+nnoremap <C-j> :m +1<CR>
+nnoremap <C-k> :m -2<CR>
+inoremap <C-j> <Esc>:m +1<CR>gi
+inoremap <C-k> <Esc>:m -2<CR>gi
+vnoremap <C-j> :m '>+1<CR>gvgv
+vnoremap <C-k> :m '<-2<CR>gvgv
 
 " colorscheme wal
 
@@ -132,6 +146,12 @@ set showmatch
 
 " Use highlighting when doing a search
 set hlsearch
+set incsearch
+set autoread
+set autowrite
+set title
+set titlestring=%(%F%)%a\ -\ VIM%(\ %M%)
+set scrolloff=2
 
 " sintaxis de bloques de código en archivos markdown
 let g:markdown_fenced_languages = ['html', 'js=javascript', 'css', 'bash']
@@ -179,7 +199,8 @@ if &shell =~# 'fish$'
     set shell=/bin/bash
 endif
 
-set backup
+set nobackup
+set writebackup
 set backupdir   =$HOME/.vim/files/backup//
 set backupext   =-vimbackup
 set backupskip  =
