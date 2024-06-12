@@ -39,6 +39,7 @@ application/vnd.openxmlformats-officedocument.wordprocessingml.document=abiword.
 image/webp=userapp-nsxiv-CPHW71.desktop
 x-scheme-handler/postman=Postman.desktop
 x-scheme-handler/figma=figma-linux.desktop
+x-scheme-handler/discord-1176718791388975124=discord-1176718791388975124.desktop
 
 [Added Associations]
 text/plain=text.desktop;
