@@ -7,3 +7,4 @@ end
 vim.wo.relativenumber = true
 vim.opt.wrap = true
 vim.opt.scrolloff = 2
+vim.opt.showcmd = true
