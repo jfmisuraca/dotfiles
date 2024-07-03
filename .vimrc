@@ -1,5 +1,6 @@
 " Leader remap
 let mapleader = " "
+set nocompatible
 " desactivar el resaltado de resultado de búsqueda hasta que vuelva a usarse
 nnoremap <Leader>h :nohlsearch<CR>
 noremap <leader>g :Goyo<CR>
@@ -35,7 +36,6 @@ autocmd BufRead,BufNewFile /tmp/neomutt* Goyo
 autocmd BufWritePost ~/.Xresources !xrdb %
 
 set splitbelow splitright
-set nocompatible
 
 " Numeros de linea hibridos
 :set number relativenumber
@@ -152,6 +152,7 @@ set autowrite
 set title
 set titlestring=%(%F%)%a\ -\ VIM%(\ %M%)
 set scrolloff=2
+syntax enable
 
 " sintaxis de bloques de código en archivos markdown
 let g:markdown_fenced_languages = ['html', 'js=javascript', 'css', 'bash']
@@ -204,7 +205,8 @@ set writebackup
 set backupdir   =$HOME/.vim/files/backup//
 set backupext   =-vimbackup
 set backupskip  =
-    set directory   =$HOME/.vim/files/swap//
+set directory   =$HOME/.vim/files/swap//
+set wildmenu
 set updatecount =100
 set undofile
 set undodir     =$HOME/.vim/files/undo//
