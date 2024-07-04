@@ -7,9 +7,20 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
+[user]
+	email = jfmisuraca@hotmail.com
+	name = Juan Francisco
 [init]
 	defaultBranch = main
 [color]
 	ui = auto
 [commit]
 	verbose = true
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[credential]
+	credentialStore = pass

@@ -6,7 +6,5 @@
 
 config_version: 2
 settings:
-  content.geolocation:
-    https://tinder.com: true
   content.notifications.enabled:
-    https://tinder.com: false
+    https://www.pcworld.com: false
