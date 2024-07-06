@@ -37,7 +37,7 @@ pre_sudo = true
 #set_title = false
 
 # Display the time in step titles
-# display_time = true
+display_time = true
 
 # Cleanup temporary or old files
 #cleanup = true
@@ -84,7 +84,7 @@ repos = [
 # Arch Package Manager to use. Allowed values: autodetect, aura, garuda_update, pacman, pamac, paru, pikaur, trizen, yay.
 #arch_package_manager = "pacman"
 # Arguments to pass yay (or paru) when updating packages
-yay_arguments = "--answerclean All, --answerdiff None"
+yay_arguments = "--answerdiff None"
 # Arguments to pass dnf when updating packages
 #dnf_arguments = "--refresh"
 #aura_aur_arguments = "-kx"
