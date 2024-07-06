@@ -3,10 +3,10 @@ application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
 text/plain=nvim.desktop
 image/png=nsxiv.desktop
 inode/directory=file.desktop
-x-scheme-handler/http=brave.desktop
-x-scheme-handler/https=brave.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
 text/html=nvim.desktop
-x-scheme-handler/about=brave.desktop
+x-scheme-handler/about=firefox.desktop
 audio/flac=mpv.desktop
 audio/x-flac=mpv.desktop
 audio/mpeg=mpv.desktop
@@ -37,8 +37,6 @@ x-scheme-handler/sip=telegramdesktop.desktop
 x-scheme-handler/xmpp=telegramdesktop.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=abiword.desktop
 image/webp=userapp-nsxiv-CPHW71.desktop
-x-scheme-handler/postman=Postman.desktop
-x-scheme-handler/figma=figma-linux.desktop
 x-scheme-handler/discord-1176718791388975124=discord-1176718791388975124.desktop
 
 [Added Associations]
