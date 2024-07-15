@@ -27,3 +27,5 @@ TODO_DONE="$TODO_DIR/done.txt"
 GOMAXPROCS=2
 
 marcadores="$HOME/Documentos/syncthing_celu/marcadores.txt"
+XDG_SESSION_TYPE=wayland 
+GDK_BACKEND=wayland

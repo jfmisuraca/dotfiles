@@ -50,6 +50,12 @@ alias p='pter $TODO_FILE'
 alias ledger='ledger -f $LEDGER_FILE'
 alias hledger='hledger -f $LEDGER_FILE'
 
+# alias git
+alias ga='git add'
+alias gs='git push'
+alias gp='git pull'
+alias gc='git commit'
+
 # versiones de nvim
 alias v="NVIM_APPNAME=nvim_vimscript nvim" #neovim con misma config que vim
 alias nvk="NVIM_APPNAME=nvim_kickstart nvim" #neovim kickstart de tjdevries
